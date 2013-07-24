@@ -6,7 +6,7 @@ The benchmarks are designed for Android phones and to run them there are followi
 2. Dalvik VM libraries installed and configured in a file named “rund.sh”, described here: 
 https://github.com/alirezaostovar/codeoffloading/blob/master/rund.sh
 
-Each benchmark has two versions, one for client and the other one for server. The server 
+Each benchmark has two versions, one for client and the other for server. The server 
 version of each project is located in a directory with _Server postfix. For running the 
 server version, the project must be opened and compiled in a development environment, 
 preferably Eclipse. Then the produced apk file must be placed next to the configured rund 
