@@ -4,6 +4,7 @@ The benchmarks are designed for Android phones and to run them there are followi
 
 1. A server having Linux x86 as operation system.
 2. Dalvik VM libraries installed and configured in a file named “rund.sh”, described here: 
+https://github.com/alirezaostovar/codeoffloading/blob/master/rund.sh
 
 Each benchmark has two versions, one for client and the other one for server. The server 
 version of each project is located in a directory with _Server postfix. For running the 
