@@ -10,6 +10,24 @@ Requirements
 2. Dalvik VM libraries installed and configured in a file named “rund.sh”, described here: 
 https://github.com/alirezaostovar/codeoffloading/blob/master/rund.sh
 
+Requirements (Maven build)
+--------------------------
+By default the application can be imported into eclipse bundled with ADT plugin and built within eclipse 
+but if you feel comfortable with maven you need to install maven-android-plugin as described in 
+http://books.sonatype.com/mvnref-book/reference/android-dev.html.
+it should be noted that the values specified by platform and avd should be changed to the appropriate values if there 
+are plans of testing the application with maven.
+
+```xml
+<configuration>
+       <sdk>
+          <platform>17</platform>
+       </sdk>
+       <emulator>
+           <avd>MiniSample4</avd>
+        </emulator>
+</configuration>
+```
 
 Each benchmark has two versions, one for client and the other for server. The server 
 version of each project is located in a directory with _Server postfix. For running the 
