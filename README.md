@@ -29,6 +29,9 @@ are plans of testing the application with maven.
 </configuration>
 ```
 
+The platform should be the name of the SDK version you want to run the application on. The avd option should have a name of one of the android virtual device you have created with 
+the AVD manager.
+
 Each benchmark has two versions, one for client and the other for server. The server 
 version of each project is located in a directory with _Server postfix. For running the 
 server version, the project must be opened and compiled in a development environment, 
