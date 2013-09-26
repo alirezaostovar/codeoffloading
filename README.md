@@ -12,10 +12,6 @@ https://github.com/alirezaostovar/codeoffloading/blob/master/rund.sh
 
 Requirements (Maven build)
 --------------------------
-For possible goals from the maven android plugins that can be run against the project with a device and emulator 
-please consult http://books.sonatype.com/mvnref-book/reference/android-dev-sect-device.html and 
-http://books.sonatype.com/mvnref-book/reference/android-dev-sect-emulator.html respectively.
-
 Each benchmark has two versions, one for client and the other for server. The server 
 version of each project is located in a directory with _Server postfix. For running the 
 server version, the project must be opened and compiled in a development environment, 
