@@ -12,26 +12,6 @@ https://github.com/alirezaostovar/codeoffloading/blob/master/rund.sh
 
 Requirements (Maven build)
 --------------------------
-By default the application can be imported into eclipse bundled with ADT plugin and built within eclipse 
-but if you feel comfortable with maven you need to install maven-android-plugin as described in 
-http://books.sonatype.com/mvnref-book/reference/android-dev.html.
-it should be noted that the values specified by platform and avd should be changed to the appropriate values if there 
-are plans of testing the application with maven.
-
-```xml
-<configuration>
-       <sdk>
-          <platform>17</platform>
-       </sdk>
-       <emulator>
-           <avd>MiniSample4</avd>
-        </emulator>
-</configuration>
-```
-
-The platform should be the name of the SDK version you want to run the application on. The avd option should have a name of one of the android virtual device you have created with 
-the AVD manager.
-
 For possible goals from the maven android plugins that can be run against the project with a device and emulator 
 please consult http://books.sonatype.com/mvnref-book/reference/android-dev-sect-device.html and 
 http://books.sonatype.com/mvnref-book/reference/android-dev-sect-emulator.html respectively.
@@ -39,8 +19,10 @@ http://books.sonatype.com/mvnref-book/reference/android-dev-sect-emulator.html r
 Each benchmark has two versions, one for client and the other for server. The server 
 version of each project is located in a directory with _Server postfix. For running the 
 server version, the project must be opened and compiled in a development environment, 
-preferably Eclipse. Then the produced apk file must be placed next to the configured rund 
-file above. Then this apk can be run on android VM using following fixed command:
+preferably Eclipse.
+
+Then the produced apk file must be placed next to the configured rund 
+file above. This apk can be run on android VM using following fixed command:
 
 ```xml
 ./rund.sh -cp projectname.apk MC.NetClasses.Main
@@ -48,8 +30,9 @@ file above. Then this apk can be run on android VM using following fixed command
 
 The client version of each project is located in a directory with _Client postfix. 
 Before opening and compiling the project and producing apk file, the server IP must be set.
- This can be done with setting the variable called IPAddress in the file “NetInfo.java” 
- inside MC package. Then, the produced apk file must be installed on the phone.
+This can be done with setting the variable called IPAddress in the file “NetInfo.java” 
+inside MC package. Then, the produced apk file must be installed on the phone.
+
 
 It should be noted that, as the variable IPAddress is a byte array, if the server IP 
 contains numbers more than 127, this number must be presented as a negative number using 
