@@ -30,11 +30,12 @@ file above. This apk can be run on android VM using following fixed command:
 The client version of each project is located in a directory with _Client postfix. 
 Before opening and compiling the project and producing apk file, the server IP must be set.
 This can be done with setting the variable called IPAddress in the file “NetInfo.java” 
-inside MC package. The client application can be built by running the following maven commands within the application's root directory.
+inside MC package. The client application can be built and deployed to the connected device by running the following maven commands within the application's root directory.
 
 ```xml
 mvn clean package
 mvn install
+mvn android:deploy
 ```
 
 Then, the produced apk file must be installed on the phone.
