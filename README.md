@@ -38,9 +38,6 @@ mvn install
 mvn android:deploy
 ```
 
-Then, the produced apk file must be installed on the phone.
-
-
 It should be noted that, as the variable IPAddress is a byte array, if the server IP 
 contains numbers more than 127, this number must be presented as a negative number using 
 Two’s Complement system. For example, for the number 255, it will be -1.
