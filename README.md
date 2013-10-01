@@ -13,9 +13,12 @@ https://github.com/alirezaostovar/codeoffloading/blob/master/rund.sh
 Requirements (Maven build)
 --------------------------
 Each benchmark has two versions, one for client and the other for server. The server 
-version of each project is located in a directory with _Server postfix. For running the 
-server version, the project must be opened and compiled in a development environment, 
-preferably Eclipse.
+version of each project is located in a directory with _Server postfix. The server application can be built by running the following maven commands within the application's root directory.
+
+```xml
+mvn clean package
+mvn install
+```
 
 Then the produced apk file must be placed next to the configured rund 
 file above. This apk can be run on android VM using following fixed command:
@@ -27,7 +30,14 @@ file above. This apk can be run on android VM using following fixed command:
 The client version of each project is located in a directory with _Client postfix. 
 Before opening and compiling the project and producing apk file, the server IP must be set.
 This can be done with setting the variable called IPAddress in the file “NetInfo.java” 
-inside MC package. Then, the produced apk file must be installed on the phone.
+inside MC package. The client application can be built by running the following maven commands within the application's root directory.
+
+```xml
+mvn clean package
+mvn install
+```
+
+Then, the produced apk file must be installed on the phone.
 
 
 It should be noted that, as the variable IPAddress is a byte array, if the server IP 
